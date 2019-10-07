@@ -70,6 +70,9 @@
         var topic = document.getElementById("topic").value;
         var message = document.getElementById("message").value;
 
+        result.style.color = "white";
+        result.innerHTML = "Please wait...";
+
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function(data) {
             if (this.readyState == 4) {
