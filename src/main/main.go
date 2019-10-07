@@ -62,7 +62,7 @@ func (this RequestHandler) sendMessage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Write([]byte("{\"data\":\"message published successfully\"}"))
+	w.Write([]byte("{\"data\":\"Message was successfully published!\"}"))
 }
 
 func main() {
