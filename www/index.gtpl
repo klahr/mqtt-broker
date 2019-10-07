@@ -4,48 +4,58 @@
 <head>
     <style>
         body {
-            background-color: #c9f391;
+            background-color: #3e434c;
         }
 
         table {
-            background-color: white;
-            border-radius: 24px;
-            border: none;
+            background-color: #3c3f41;
+            border-radius: 12px;
+            border: 4px solid #2b2b2b;
             padding: 16px;
-            box-shadow: #0000001f 2px 2px 0px 2px;
         }
 
         p {
             font-family: verdana;
             font-size: 14px;
             font-weight: bold;
+            color: #bbbbbb;
         }
 
         h1 {
             margin-top: 24px;
-            color: #03a9f4;
-            text-shadow: #4c4c4c 2px 2px 0px;
+            color: #499c54;
         }
 
         input {
             padding: 4px;
             font-family: monospace;
+            background-color: #2b2b2b;
+            color: #a6b5bf;
+            border: none;
         }
 
         textarea {
             padding: 4px;
             font-family: monospace;
             resize: none;
+            background-color: #2b2b2b;
+            color: #a6b5bf;
+            border: none;
         }
 
         button {
             padding: 8px;
-            background-color: #03A9F4;
-            border: 2px solid #00000038;
+            background-color: #365880;
+            border: 2px solid #4c708c;
             border-radius: 4px;
-            color: white;
+            color: #babab6;
             font-weight: bold;
-            font-size: 10px;
+            font-size: 14px;
+        }
+
+        button:active {
+            border: 2px solid #43688c;
+            box-shadow: inset white 0 0 2px;
         }
 
     </style>
@@ -66,7 +76,7 @@
                 var result = document.getElementById("result");
                 var json = JSON.parse(this.responseText);
                 if (this.status == 200) {
-                    result.style.color = "green";
+                    result.style.color = "#499c54";
                     result.innerHTML = json.data;
                 } else {
                     result.style.color = "red";
