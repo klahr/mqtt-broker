@@ -19,7 +19,8 @@ func (this RequestHandler) initialize() {
 }
 
 func (this RequestHandler) run() {
-	if err := http.ListenAndServe(":8080", http.DefaultServeMux); err != nil {
+	print("Now browse to http://localhost:17002\n")
+	if err := http.ListenAndServe(":17002", http.DefaultServeMux); err != nil {
 		print(err.Error())
 	}
 }
