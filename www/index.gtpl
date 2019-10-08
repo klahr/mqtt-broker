@@ -15,7 +15,7 @@
         }
 
         p {
-            font-family: verdana;
+            font-family: sans-serif;
             font-size: 14px;
             font-weight: bold;
             color: #bbbbbb;
@@ -24,6 +24,7 @@
         h1 {
             margin-top: 24px;
             color: #499c54;
+            font-family: sans-serif;
         }
 
         input {
